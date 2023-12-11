@@ -76,7 +76,7 @@ func connected(lines [][]rune, i, j int, dir rune) bool {
 	}
 
 	if dir == 'R' {
-		if j-1 < 0 {
+		if j+1 < 0 {
 			return false
 		}
 		n := lines[i][j+1]
